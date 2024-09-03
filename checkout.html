@@ -1,0 +1,345 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/styles.css">
+
+      <!-- Bootstrap Font Icon CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" >
+      <title>Fresh Veg</title>
+  </head>
+  <body>
+      <header>
+        
+  <!-- Main Navbar-->
+        
+            <div class="main-navbar shadow-sm sticky-top">
+              <div class="top-navbar">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                              <h5 class="brand-name">Fresh veg</h5>
+                          </div>
+                          <div class="col-md-5 my-auto">
+                              <form role="search">
+                                  <div class="input-group">
+                                      <input type="search" placeholder="Search your product" class="form-control" >
+                                      <button class="btn btn-success" type="submit">
+                                          <i class="bi bi-search"></i>
+                                      </button>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="col-md-5 my-auto">
+                              <ul class="nav justify-content-end">
+                                  
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#">
+                                          <i class="bi-cart"></i>  (3)
+                                      </a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#">
+                                          <i class="bi-heart"></i> (0)
+                                      </a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="bi-person"></i> 
+                                      </a>
+                                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item" href="#"><i class="bi-person" style="color:black"></i> Profile</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="bi bi-list-ol" style="color:black"></i> My Orders</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="bi-heart" style="color:black"></i> My Wishlist</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="bi bi-cart" style="color:black"></i> My Cart</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right" style="color:black"></i> Logout</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!--Nav bar Menu-->
+
+              <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="container-fluid">
+                      <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
+                          Fresh Veg
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                  <a class="nav-link" href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="products.html">All products</a>
+                              </li>
+                            
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Users
+                                  </a>
+                                  <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink" style="border: 0;">
+                                      <li><a class="dropdown-item" href="newuser.html">New User</a></li>
+                                      <li><a class="dropdown-item" href="login.html">Existing User</a></li>
+                                  </ul>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="checkout.html">Check Out</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+
+            
+        
+      </header>
+      <main>
+  <!--Form Items-->
+  <div class="container-fluid bg-light">
+    <div class="row">
+      <!--billing details-->
+      <div class="col-md-6 bg-white mt-5 mb-5" >
+  <h3 class="txt-green mb-3">Billing Address</h3>
+  <form class="row g-3 needs-validation" action="#">
+      <div class="col-md-6">
+        <label for="inputName" class="form-label">First Name*</label>
+        <input type="text" class="form-control" id="inputName" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputlastname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="inputlastname">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address*</label>
+        <input type="text" class="form-control" id="inputAddress" maxlength="300"  placeholder="1234 Main St" required>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-6">
+          <label for="inputMobile" class="form-label">Mobile*</label>
+          <input type="number" class="form-control" id="inputMobile" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputemail" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="inputemail">
+        </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City*</label>
+        <input type="text" class="form-control" id="inputCity" required>
+      </div>
+     
+      
+      <div class="col-md-6">
+        <label for="inputZip" class="form-label">Zip*</label>
+        <input type="text" class="form-control" id="inputZip" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Shipping address is the same as my billing address
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Save the information for next time
+            </label>
+          </div>
+        </div>
+    <div class="col-12">
+      <hr>
+    </div>
+      
+      <div class="col-12">
+        <h3 class="txt-green ">Payment</h3>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadio1" checked >
+          <label class="form-check-label" for="flexRadio1">
+            Credit Card
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadio2" >
+          <label class="form-check-label" for="flexRadio2">
+          Debit Card
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadio3"  >
+          <label class="form-check-label" for="flexRadio3">
+          Paypal
+          </label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="inputcard" class="form-label">Name on Card</label>
+        <input type="text" class="form-control" id="inputcard" required>
+        <span class="text-muted">Full Name as displayed on card</span>
+      </div>
+      <div class="col-md-6">
+        <label for="inputcardnumber" class="form-label">Credit Card Number</label>
+        <input type="number" class="form-control" id="inputcardnumber" required>
+      </div>
+      <div class="col-md-3">
+        <label for="inputexpire" class="form-label">Expiration</label>
+        <input type="text" class="form-control" id="inputexpire" required>
+      </div>
+      <div class="col-md-3">
+        <label for="inputcvv" class="form-label">CVV</label>
+        <input type="number" class="form-control" id="inputcvv" required>
+      </div>
+      <div class="col-12 mb-3" style="text-align: end;">
+        <button type="submit" class="btn btn-success">Check Out</button>
+      </div>
+    </form>
+    
+  </div>
+
+  <div class="col-md-1"></div>
+  <!--order details-->
+  <div class="col-md-4 bg-white cart-list mb-5 mt-5">
+    <div>
+      <h3 class="txt-green mb-3">Your Order</h3>
+    </div>
+    
+      <table class="table table-success table-striped">
+          <thead>
+              <tr>
+                <th scope="col">Products</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price (&#x20B9;)</th>
+                <th scope="col">Quantity (kg)</th>
+                <th scope="col">Total (&#x20B9;)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table-imgwidth"><img class="img-fluid" src="images/fruite-item-1.jpg" alt="Orange"></td>
+                <td>Orange</td>
+                <td>60</td>
+                <td>2</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                  <td class="table-imgwidth"><img class="img-fluid" src="images/vegetable-item-1.jpg" alt="Tomato"></td>
+                  <td>Tomato</td>
+                  <td>40</td>
+                  <td>1</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td class="table-imgwidth"><img class="img-fluid" src="images/fruite-item-2.jpg" alt="Raspberries"></td>
+                  <td>Raspberries</td>
+                  <td>200</td>
+                  <td>1</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  
+                  <td colspan="4">Sub Total</td>
+                  <td>&#x20B9; 360</td>
+                </tr>
+                <tr>
+                  
+                  <td colspan="4">Shipping</td>
+                  <td>&#x20B9; 0</td>
+                </tr>
+                <tr>
+                  
+                  <td colspan="4">Estimated taxes</td>
+                  <td>&#x20B9; 40</td>
+                </tr>
+                <tr>
+                  
+                  <td colspan="4" class="last-row">Total:</td>
+                  <td>&#x20B9; 400</td>
+                </tr>
+            </tbody>
+        </table>
+  </div>
+  </div>
+
+      </div>
+    
+    
+      </main>
+      <!--Footer-->
+      <footer>
+          <div>
+              <div class="footer-area">
+                  <div class="container">
+                      <div class="row">
+                          
+                          <div class="col-md-4">
+                              <h4 class="footer-heading">Fresh Veg E-Commerce</h4>
+                              <div class="footer-underline"></div>
+                              <p>
+                                  Fresh Veg is Ecommerce-Vegetable shop.<br>Here you can get fresh vegetables ,<br> fruits and green leafs.Started since 2024.
+                              </p>
+                          </div>
+                        
+                          <div class="col-md-4">
+                              <h4 class="footer-heading">Shop Now</h4>
+                              <div class="footer-underline"></div>
+                              <ol class="list-group">
+                                  <li class="list-group-item list-color"><a href="products.html" class="text-white">Fruits</a></li>
+                                  <li class="list-group-item list-color"><a href="products.html" class="text-white">Vegetables</a></li>
+                                  <li class="list-group-item list-color"><a href="products.html" class="text-white">Green leaves</a></li>
+                                
+                                </ol>
+                            
+                          </div>
+                          <div class="col-md-4">
+                              <h4 class="footer-heading">Reach Us</h4>
+                              <div class="footer-underline"></div>
+                              <div class="mb-2">
+                                  <p>
+                                      <i class="bi bi-geo-alt icon-padding"></i> #444, some main road, some area,<br> some street, tamilnadi, india - 606106
+                                  </p>
+                              </div>
+                              <div class="mb-2">
+                                  <a href="" class="text-white">
+                                      <i class="bi bi-telephone icon-padding"></i> +91 888-XXX-XXXX
+                                  </a>
+                              </div>
+                              <div class="mb-2">
+                                  <a href="" class="text-white">
+                                      <i class="bi bi-envelope icon-padding"></i> fresh Veg@gmail.com
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="copyright-area">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <p class="text-center"> &copy; 2024 - Fresh Veg Ecommerce. All rights reserved.</p>
+                          </div>
+                        
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </body>
+  </html>

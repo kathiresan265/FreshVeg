@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Fresh Veg</title>
+</head>
+<body>
+    <header>
+       
+<!-- Main Navbar-->
+       
+          <div class="main-navbar shadow-sm sticky-top">
+            <div class="top-navbar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                            <h5 class="brand-name">Fresh Veg</h5>
+                        </div>
+                        <div class="col-md-5 my-auto">
+                            <form role="search">
+                                <div class="input-group">
+                                    <input type="search" placeholder="Search your product" class="form-control" >
+                                    <button class="btn btn-success" type="submit">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!--Nav bar Menu-->
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
+                         Fresh veg
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">All products</a>
+                            </li>
+                           
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Users
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink" style="border: 0;">
+                                    <li><a class="dropdown-item" href="newuser.html">New User</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Existing User</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="checkout.html">Check Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+          
+       
+    </header>
+    <!--Form Starts-->
+<main>
+    <div class="container bg-light">
+       
+       
+            <div class="row mt-5"> 
+                <div class="col-lg-4 m-auto bg-white rounded-top wrapper mb-10">
+                    <h2 class="text-center mt-3 txt-green">Sign Up Now</h2>
+                    <p class="text-center text-muted ">It's Free and Takes a Minute</p>
+                    <form action="#" class="needs-validation">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                            <input type="text" class="form-control" placeholder="User Name" required>
+                           
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                            <input type="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                            <input type="password" class="form-control" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div> 
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                            <input type="number" class="form-control" placeholder=" +91 Mobile Number" required>
+                        </div>
+                        <div class="d-grid mb-5">
+                            <p>How did you hear about us?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                  Newspaper
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                  Television
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label" for="exampleRadios3">
+                                  Friends
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                                <label class="form-check-label" for="exampleRadios4">
+                                  Social Media
+                                </label>
+                              </div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success mb-3">Sign Up Now</button>
+                            <p class="text-center text-muted mt-2">
+                                When You Register by Clicking Sign Up Button,You Agree to our 
+                                <a href="">Terms And Conditions </a> and <a href="">Privacy Policy</a>
+                            </p>
+                            <p class="text-center">
+                              Already Have an Account? <a href="login.html">Login Here</a>
+                            </p>
+                        </div>
+                    </form>
+                
+                </div> 
+            </div>
+            </div> 
+  
+           
+  
+          
+           
+  
+          
+    
+   
+</main>
+      <!--Footer-->
+      <footer>
+        <div>
+            <div class="footer-area">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-4">
+                            <h4 class="footer-heading">Fresh Veg E-Commerce</h4>
+                            <div class="footer-underline"></div>
+                            <p>
+                              Fresh veg is Ecommerce-Vegetable shop.<br>Here you can get fresh vegetables ,<br> fruits and green leafs.Started since 2024.
+                            </p>
+                        </div>
+                      
+                        <div class="col-md-4">
+                            <h4 class="footer-heading">Shop Now</h4>
+                            <div class="footer-underline"></div>
+                            <ol class="list-group">
+                                <li class="list-group-item list-color"><a href="" class="text-white">Fruits</a></li>
+                                <li class="list-group-item list-color"><a href="" class="text-white">Vegetables</a></li>
+                                <li class="list-group-item list-color"><a href="" class="text-white">Green leaves</a></li>
+                               
+                              </ol>
+                          
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="footer-heading">Reach Us</h4>
+                            <div class="footer-underline"></div>
+                            <div class="mb-2">
+                                <p>
+                                    <i class="bi bi-geo-alt icon-padding"></i> #444, some main road, some area,<br> some street, tamil nadu, india - 606106
+                                </p>
+                            </div>
+                            <div class="mb-2">
+                                <a href="" class="text-white">
+                                    <i class="bi bi-telephone icon-padding"></i> +91 888-XXX-XXXX
+                                </a>
+                            </div>
+                            <div class="mb-2">
+                                <a href="" class="text-white">
+                                    <i class="bi bi-envelope icon-padding"></i> fresh_veg@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-center"> &copy; 2024 - Fresh Veg Ecommerce. All rights reserved.</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
